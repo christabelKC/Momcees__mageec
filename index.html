@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Momcees Mageec - Creating Magic for Your Taste Buds</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Tailwind CSS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.js"></script>
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Bootstrap Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-danger fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Momcees Mageec</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#menu">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#reviews">Reviews</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Tailwind Hero Section -->
+    <section id="home" class="bg-gradient-to-r from-red-600 to-orange-500 min-h-screen flex items-center pt-16">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 text-white">
+                    <h1 class="text-4xl md:text-6xl font-bold mb-4">Welcome to Momcees Mageec</h1>
+                    <p class="text-xl mb-8">Experience the magic of delicious meals delivered to your door, crafted with love and the finest ingredients.</p>
+                    <button class="bg-white text-red-600 px-8 py-3 rounded-full font-semibold hover:bg-red-100 transition duration-300">
+                        Order Now
+                    </button>
+                </div>
+                <div class="md:w-1/2 mt-8 md:mt-0">
+                    <img src="/api/placeholder/600/400" alt="Delicious Food" class="rounded-lg shadow-xl">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bootstrap Features Section -->
+    <section id="menu" class="py-16 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-12 h1">Our Menu</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center">
+                            <i class="fas fa-utensils fa-3x text-danger mb-3"></i>
+                            <h3 class="card-title h4">Appetizers</h3>
+                            <p class="card-text">Start your meal with our tasty range of appetizers crafted to tease your taste buds.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center">
+                            <i class="fas fa-drumstick-bite fa-3x text-danger mb-3"></i>
+                            <h3 class="card-title h4">Main Course</h3>
+                            <p class="card-text">Savor our hearty main courses, prepared with love and fresh ingredients.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center">
+                            <i class="fas fa-ice-cream fa-3x text-danger mb-3"></i>
+                            <h3 class="card-title h4">Desserts</h3>
+                            <p class="card-text">Indulge in our delightful desserts to end your meal on a sweet note.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bootstrap Testimonials Section -->
+    <section id="reviews" class="py-16 bg-white">
+        <div class="container">
+            <h2 class="text-center mb-12 h1">What Our Customers Say</h2>
+            <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="card border-0 shadow-sm mx-auto" style="max-width: 600px;">
+                            <div class="card-body text-center p-5">
+                                <p class="mb-4">"Momcees Mageec's meals bring a smile to my face every time. Their flavors are truly magical!"</p>
+                                <h5 class="mb-1">Jane Doe</h5>
+                                <p class="text-muted">Food Lover</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card border-0 shadow-sm mx-auto" style="max-width: 600px;">
+                            <div class="card-body text-center p-5">
+                                <p class="mb-4">"The quality and speed of delivery are unmatched. I’m hooked!"</p>
+                                <h5 class="mb-1">John Smith</h5>
+                                <p class="text-muted">Happy Customer</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tailwind Footer -->
+    <footer class="bg-brown-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Momcees Mageec</h3>
+                    <p class="text-gray-400">Crafting unforgettable dining experiences, one meal at a time.</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Follow Us</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Contact</h3>
+                    <p class="text-gray-400">Email: support@momceesmageec.com</p>
+                    <p class="text-gray-400">Phone: (555) 987-6543</p>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 Momcees Mageec. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
